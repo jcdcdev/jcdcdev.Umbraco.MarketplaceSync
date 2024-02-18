@@ -1,5 +1,5 @@
-import {css, html, LitElement} from 'https://cdn.skypack.dev/lit';
-import {UUITextStyles} from 'https://cdn.skypack.dev/@umbraco-ui/uui-css';
+import { css, html, LitElement } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
+import { UUITextStyles } from 'https://cdn.skypack.dev/@umbraco-ui/uui-css';
 
 class PackageSync extends LitElement {
     static styles = [
@@ -10,13 +10,13 @@ class PackageSync extends LitElement {
     ];
 
     static properties = {
-        packageId: {type: String},
-        showPackageCard: {type: Boolean},
-        isLoading: {type: Boolean},
-        progress: {type: Number},
-        notifications: {type: Array},
-        packageSlot: {type: LitElement},
-        isDisabled: {type: Boolean}
+        packageId: { type: String },
+        showPackageCard: { type: Boolean },
+        isLoading: { type: Boolean },
+        progress: { type: Number },
+        notifications: { type: Array },
+        packageSlot: { type: LitElement },
+        isDisabled: { type: Boolean }
     };
 
     constructor() {
@@ -118,12 +118,12 @@ class PackageSync extends LitElement {
             });
 
             if (response.ok) {
-                return {success: true, retry: null};
+                return { success: true, retry: null };
             }
             const max = response.headers.get('Retry-After');
-            return {success: response.ok, retry: +max};
+            return { success: response.ok, retry: +max };
         } catch (error) {
-            return {success: false, retry: 0};
+            return { success: false, retry: 0 };
         }
     }
 

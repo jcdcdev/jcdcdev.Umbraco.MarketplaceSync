@@ -1,5 +1,5 @@
-﻿import {css, html, LitElement} from 'https://cdn.skypack.dev/lit';
-import {UUITextStyles} from 'https://cdn.skypack.dev/@umbraco-ui/uui-css';
+﻿import { css, html, LitElement } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
+import { UUITextStyles } from 'https://cdn.skypack.dev/@umbraco-ui/uui-css';
 
 class PackageCard extends LitElement {
     static styles = [
@@ -17,7 +17,7 @@ class PackageCard extends LitElement {
     ];
 
     static properties = {
-        packageId: {type: String},
+        packageId: { type: String },
     };
 
     generateBadgeLink(hrefUrl, imgUrl, altText) {
