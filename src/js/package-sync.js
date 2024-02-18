@@ -1,14 +1,6 @@
 import { css, html, LitElement } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
-import { UUITextStyles } from 'https://cdn.skypack.dev/@umbraco-ui/uui-css';
 
 class PackageSync extends LitElement {
-    static styles = [
-        UUITextStyles,
-        css`
-          /* your css goes here */
-        `,
-    ];
-
     static properties = {
         packageId: { type: String },
         showPackageCard: { type: Boolean },
