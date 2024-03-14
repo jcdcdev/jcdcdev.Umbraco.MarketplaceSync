@@ -76,7 +76,7 @@ class PackageSync extends LitElement {
             this.showNotification(`Request failed`, 'danger', message)
             return;
         }
-        this.packageId = nuget.data[0].title;
+        this.packageId = nuget.data[0].id;
 
         const response = await this.postToUmbraco(data);
 
