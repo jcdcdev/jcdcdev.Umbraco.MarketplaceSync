@@ -20,13 +20,15 @@ class PackageSync extends LitElement {
         this.notifications = [];
         this.isDisabled = false;
         this.placeholders = [
-            'Umbraco.Forms',
-            'uSync',
-            'Contentment',
+            'jcdcdev.Umbraco.CloudflareMediaCache',
+            'jcdcdev.Umbraco.ExtendedMarkdownEditor',
+            'jcdcdev.Umbraco.ExtendedDropdownEditor',
+            'jcdcdev.Umbraco.ReadingTime',
+            'Umbraco.Community.BackOfficeOrganiser',
+            'Umbraco.Community.DataProtection',
+            'Umbraco.Community.FileSystemProviders.B2',
             'Umbraco.Community.SimpleDashboards',
-            'Umbraco.Community.SimpleContentApps',
-            'SEOChecker',
-            'Diplo.GodMode'
+            'Umbraco.Community.SimpleWorkspaceViews'
         ]
     }
 
